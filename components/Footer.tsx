@@ -1,0 +1,3 @@
+import Link from 'next/link';
+import { BookOpen, Heart } from 'lucide-react';
+export default function Footer(){return <footer className="site-footer"><div className="footer-inner"><div className="footer-brand"><BookOpen size={23}/><span>Word of <b>Wisdom</b></span></div><p>Making Scripture clear, practical, and meaningful for everyday life.</p><div className="footer-links"><Link href="/teachings">Teachings</Link><Link href="/podcasts">Podcasts</Link><Link href="/about">About</Link><Link href="/admin">Creator tools</Link></div><small>Created with <Heart size={12} fill="currentColor"/> for the love of God's Word. © {new Date().getFullYear()} Word of Wisdom.</small></div></footer>}
